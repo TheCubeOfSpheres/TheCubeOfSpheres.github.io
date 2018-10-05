@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Joseph James - Software Engineer </title>
+        <style type="text/css">
+            html, body {margin: 0; padding: 0; height: 100%; width: 100%; background-color: white;} 
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg">
+        <script>document.body.classList.add('fade-out');</script>
+        
+    <div class="center">
+        <label class="panel"> Joseph James - Software Engineer | Email: TheCubeOfSpheres@gmail.com | Cell: 305-283-9503 | <a target='_blank' href="https://github.com/Jo7ephJames?tab=repositories">GitHub Link</a> </label> 
+    </div>     
+        <div class="">
+            <div class="indent">       
+                <button class="design" onclick="select.play(); openNav(experienceData);"> Experience </button>
+                <button class="design" onclick="select.play(); openNav(skillData);"> Skills </button>
+                <button class="design" onclick="select.play(); openNav(portfolioData);"> Portfolio </button>
+                <button class="design" onclick="select.play(); openNav(contactData);"> Contact </button>
+                <button class="design" onclick="select.play(); openNav(aboutData);"> About </button>
+            </div>
+        </div>
+        
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); x.play();">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <div id="data" class="data">
+                    <script id="hudDisplay" type="text/x-handlebars-template">
+                        {{#if isData}}
+                            {{{title}}}
+                            {{{header1}}}
+                                {{#list notes1}}
+                                {{/list}}
+                            {{{header2}}}
+                                {{#list notes2}}
+                                {{/list}}
+                            {{{header3}}}
+                                {{#list notes3}}
+                                {{/list}}
+                        {{else}}
+                            <form id="contactForm" class="form">
+                                  First name:<br>
+                                  <input type="text" name="firstname"><br>
+                                  Last name:<br>
+                                  <input type="text" name="lastname"><br>
+                                  Email:<br>
+                                  <input type="email" name="email"><br>
+                                  Phone:<br>
+                                  <input type="tel" name="phonenumber"><br>
+                                  Message: <br>
+                                  <textarea placeholder="What's on your mind?" name="message" rows="15" cols="40"></textarea>
+                                  <br>
+                            </form>
+                            <div class="center">
+                                <button id="submitButton"> Submit </button>
+                            </div>
+                        {{/if}}    
+                    </script>
+                </div>
+            </div>
+        </div>
+        <img src="media/illusion.gif" class="ripple">
+        <script src="src/smtp.js"></script>
+        <script src="src/handlebars-v4.0.12.js"></script>
+        <script src="src/resume.js"></script>
+    </body>
+</html>
+
+
+
+<!--<div class="data">
+                <a  href="https://jo7ephjames.github.io/" target="_blank">Vanilla Todolist</a>:
+                        <ul class="indent"> 
+                            <li>Saves todos to local storage</li>
+                            <li>Double click to edit todos</li>
+                            <li>Checkbox to indicate completion</li>
+                            <li>Checkall Feature</li>
+                            <li>Option to render data based on completion status</li>
+                        </ul>
+                    <a href="https://rocky-basin-92760.herokuapp.com/" target="_blank">Appointment Setter</a>:
+                        <ul class="indent">
+                            <li>Calendar interface rendered from vanilla javascript functions</li>
+                            <li>Node.js  server deployed to Heroku</li>
+                            <li>Calendar data(client and schedule information) stored on MongoDB</li>
+                            <li>Admin accessible by button for educational purposes</li>
+                            <li>Automated Text and Email confirmation with Nexmo</li>
+                            <li>Captcha required for submission</li>
+                        </ul>
+                    <a href="https://pacific-atoll-50941.herokuapp.com/" target="_blank">Nested Todolist</a>:
+                        <ul class="indent">
+                            <li>Authentication and login system with Passport</li>
+                            <li>Password storage and password encryption with Bcrypt</li>
+                            <li>Task lists stored on MongoDB </li>
+                            <li>Add, Save, or Delete separate task data from user database</li>
+                            <li>Recursive nesting of tasks,  collapsible subtasks option</li>
+                            <li>Check boxes to indicate completion</li>
+                        </ul>
+                </div>-->
