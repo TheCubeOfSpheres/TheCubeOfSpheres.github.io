@@ -125,7 +125,7 @@ function validateFormData() {
 var aboutData = {
 	isData: true,
 	title: "<label> Bio </label>",
-	header1: "<label id='bio'> Stuff About Me </label>",
+	header1: "<p id='bio'> Stuff About Me </p>",
 	notes1: '',
 	header2: '',
 	notes2: '',
