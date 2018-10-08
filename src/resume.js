@@ -39,6 +39,7 @@ function secret() {
 var targetDiv = document.getElementById('data');
 var hudDisplay = document.getElementById('hudDisplay').innerHTML;
 var hudDisplayTemplate = Handlebars.compile(hudDisplay);
+var bio = "Joseph James is a self taught programmer and aspiring software engineer, who works with code bases and their corresponding tools methodically in order to achieve consistent results.  Joseph believes that with good process and communication, any code base can be systematically broken down into its simplest components, understood with precision, and then optimized for efficieny expanded capability.  In his spare time Joseph is an avid reader of science ficition and fantasy novels, hobbyist mycologist, botanist, and gamer. Joseph James holds a Bachelor of Arts in Philosophy from Florida Internation University.  As a technologically inclined philosopher, Joseph is keenly aware of the vast area of unexplored possibilities modern technology has unlocked and looks forward to the future."
 
 var experienceData = {
 	isData: true,
@@ -124,7 +125,7 @@ function validateFormData() {
 var aboutData = {
 	isData: true,
 	title: "<label> Bio </label>",
-	header1: '<label> Stuff About Me </label>',
+	header1: "<label id='bio'> Stuff About Me </label>",
 	notes1: '',
 	header2: '',
 	notes2: '',
@@ -164,6 +165,10 @@ function openNav(data) {
 		submitButton.addEventListener('click', function() {
 			validateFormData();
 		});
+	}
+	if(data === aboutData) {
+		var bioLabel = document.getElementById('bio');
+		bioLabel.textContent = bio;
 	}
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
