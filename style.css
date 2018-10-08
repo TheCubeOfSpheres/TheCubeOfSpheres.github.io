@@ -107,7 +107,8 @@ label {
 }
 
 .overlay p {
-  color: #A3ED9E;
+	color: #A3ED9E;
+	text-align: justify;
 }
 
 .overlay button:hover {
