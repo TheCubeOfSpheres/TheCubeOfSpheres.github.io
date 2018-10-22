@@ -48,7 +48,7 @@ var experienceData = {
 	notes1: ['Fertilizing regiment', 'Greenhouse maintenance', 'Watering', 'Harvesting', 'Weighing and packaging produce', 'Market sales'],
 	header2: "<a onmouseover='hover.play();' href='https://www.facebook.com/polos.palms' target='_blank'> Polos' Palms: 2015-2016</a>",
 	notes2: ['Fertilizing regiment', 'Maintenance of machinery', 'Watering', 'Harvesting', 'Tree removal', 'Tree Trimming'],
-	header3: "<a onmouseover='hover.play();' href='https://www.lyft.com/' target='_blank'>Lyft:Driver - Current </a>",
+	header3: "<a onmouseover='hover.play();' href='https://www.lyft.com/' target='_blank'>Lyft: 2016 - Current </a>",
 	notes3: ['Lyft Driver'],
 }
 
