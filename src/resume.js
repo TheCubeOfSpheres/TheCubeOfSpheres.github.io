@@ -39,8 +39,7 @@ function secret() {
 var targetDiv = document.getElementById('data');
 var hudDisplay = document.getElementById('hudDisplay').innerHTML;
 var hudDisplayTemplate = Handlebars.compile(hudDisplay);
-var bio = "Joseph James is a self taught programmer and aspiring software engineer. Joseph works with code bases and their corresponding tools methodically in order to achieve consistent results.  Joseph believes that with good process and communication, any code base can be systematically broken down into its simplest components, understood with precision, and then optimized for efficiency and expanded capability.  In his spare time Joseph is an avid reader of science fiction and fantasy novels, hobbyist mycologist, botanist, and gamer. Joseph James holds a Bachelor of Arts in Philosophy from Florida International University.  As a technologically inclined philosopher, Joseph is keenly aware of the vast area of unexplored possibilities modern technology has unlocked and looks forward to the future."
-
+var bio = "I am a self taught programmer and aspiring software engineer. Over the last two years I learnined the fundamental concepts of programming by studying JavaScript and related tools suchs as CSS, Node.js and HTML.  From my initial studies I came to understand that with good process and communication, any code base can be systematically broken down into its simplest components, understood with precision, and then optimized for efficiency and expanded capability. I hold a Bachelor of Arts in Philosophy from Florida International University. In my spare time I am an avid reader of science fiction and fantasy novels, hobbyist mycologist, and botanist. I am currently expanding by programming capabilities by studying C++ and machine learning and look forward to incorporating both tools into future projects."
 var experienceData = {
 	isData: true,
 	title: "<label>Experience</label>",
