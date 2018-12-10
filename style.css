@@ -74,7 +74,7 @@ label {
     left: 0;
     bottom: 200;
     background-image: url("media/display.png");
-    border: 1px solid black;
+    border-top: 1px solid black;
     box-shadow: 10px 10px 5px -5px black;
     background-position: center;
   	background-repeat: no-repeat;
