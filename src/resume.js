@@ -4,6 +4,10 @@ function fadeIn() {
 	document.body.classList.remove('fade-out');
 }
 
+window.onload = function() {
+	fadeIn();
+}
+
 /*Audio Files
 ------------------------------------------------*/
 var x = new Audio("media/closeNav.wav")
